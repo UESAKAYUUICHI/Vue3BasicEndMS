@@ -53,7 +53,7 @@ const hasChildren = computed(() => list.value.filter((item) => item.children))
 </script>
 
 <template>
-  <el-aside width="180px">
+  <el-aside width="180px" id="aside">
     <el-menu background-color="#545c64" text-color="#fff">
       <h3>通用后台管理系统</h3>
       <el-menu-item v-for="item in noChildren" :index="item.path" :key="item.path">
@@ -75,13 +75,16 @@ const hasChildren = computed(() => list.value.filter((item) => item.children))
     </el-menu>
   </el-aside>
 </template>
-<style scoped lang="less">
+<style lang="less">
+#el-aside {
+  height: 100%;
+}
 .icons {
   width: 18px;
   height: 18px;
   margin-right: 5px;
 }
-:deep(.el-menu) {
+.el-menu {
   border-right: none;
   h3 {
     line-height: 48px;

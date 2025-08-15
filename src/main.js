@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 //格式化样式
-import '@/assets/less/reset.less'
+import '@/assets/less/reset.css'
 
 //引入ElementPlus
 import ElementPlus from 'element-plus'

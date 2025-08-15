@@ -4,7 +4,7 @@
   <router-view></router-view>
 </template>
 
-<style scoped>
+<style>
 /* style */
 #app {
   width: 100%;

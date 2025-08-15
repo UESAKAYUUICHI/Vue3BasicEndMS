@@ -16,12 +16,16 @@
 import CommonAside from '@/components/CommonAside.vue'
 </script>
 
-<style scoped lang="less">
+<style lang="less">
 .common-layout,
 .lay-container {
   height: 100%;
+  background: #303133;
 }
 .el-header {
   background-color: #333;
+}
+.right-main {
+  background-color: #fff;
 }
 </style>
